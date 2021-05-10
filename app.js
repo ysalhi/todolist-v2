@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //DB connection
-mongoose.connect("mongodb+srv://admin-yassir:Angular01@cluster0-ky8il.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongoURL", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const itemsSchema = {
   name: {
